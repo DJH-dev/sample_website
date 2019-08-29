@@ -4,14 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>HTML tags</title>
+
+  <style type="text/css" media="screen">
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: blue;
+    }
+  </style>
 </head>
 
 <body>
 
-  <div class="">
-    <a href="tags.html">HTML Tags</a>
-    <a href="index.html">Home</a>
-    <a href="moby_dick.html">Moby Dick</a>
+  <div class="" style="text-align: right;">
+    <a href="index.html" style="text-decoration: none;">Home</a>
+    <a href="tags.html" style="margin: 0 0 0 10px; text-decoration: none;">HTML Tags</a>
+    <a href="moby_dick.html" style="margin: 0 0 0 10px; text-decoration: none;">Moby Dick</a>
   </div>
 
   <h1>Important HTML tags</h1>
@@ -102,8 +112,8 @@
       <th>Result</th>
     </tr>
     <tr>
-      <td><code>span</code></td>
-      <td>span</td>
+      <td style="padding: 10px;"><code>span</code></td>
+      <td style="padding: 10px;">span</td>
       <td>group inline-elements</td>
       <td><code>&lt;span&gt;technical sophistication&lt;/span&gt;</code></td>
       <td><span>technical sophistication</span></td>
@@ -158,6 +168,65 @@
       <td><code>p { Background: blue;}</code></td>
     </tr>
   </table>
+
+  <h2>Document tags</h2>
+
+  <table>
+    <tr>
+      <th>Tag</th>
+      <th>Name</th>
+      <th>Purpose</th>
+      <th>Example</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px;"><code>html</code></td>
+      <td style="padding: 10px;">HTML</td>
+      <td>tells the browser that this is an HTML document</td>
+      <td><code>&lt;!DOCTYPE HTML&gt;</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>head</code></td>
+      <td>head</td>
+      <td>container for all the head elements</td>
+      <td><code>&lt;head&gt;&lt;title&gt;Title of the document&lt;/title&gt;&lt;/head&gt;</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>body</code></td>
+      <td>body</td>
+      <td>defines the document's body</td>
+      <td>
+        <code>&lt;body&gt;The content of the document&lt;/body&gt;</code>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>title</code></td>
+      <td>title</td>
+      <td>is required and it defines the title of the document</td>
+      <td>
+        <code>
+          &lt;title&gt;HTML Reference&lt;/title&gt;
+        </code>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>meta</code></td>
+      <td>meta</td>
+      <td>provides metadata about the HTML document</td>
+      <td>
+        <code>
+          &lt;meta charset="UTF-8"&gt;
+        </code>
+      </td>
+      <td></td>
+    </tr>
+
+  </table>
+
 </body>
 
 </html>
